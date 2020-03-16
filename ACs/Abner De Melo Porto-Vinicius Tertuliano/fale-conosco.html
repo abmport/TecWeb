@@ -10,7 +10,15 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/form.css">
-    <title>Fale Conosco</title>
+    <title>Tudo sobre Google Glass</title>
+    <script language="javascript" src="_javascript/funcoes.js"></script> 
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById('cQtd').value)
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;  
+        }
+    </script>
 </head>
 
 <body>
@@ -44,7 +52,7 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                         <h3 class="direita">Atualizado em 01/Maio/2013</h3>
                     </hgroup>
                 </header>
-                <form method="POST" action="/">
+                <form method="POST" action="#" oninput="calc_total();">
                 <fieldset id="usuario">
                     <legend>Identificação do Usuário</legend> 
                     <p><label for="cNome">Nome:</label>
@@ -115,28 +123,37 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                     </p>
                     <p>
                     <label for="cMsg">Mensagem:
-                    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe sua mensagem..."></textarea>
+                    <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe sua mensagem..."></textarea>
                     </label>
                     </p>
                 </fieldset>
 
-                <fieldset>
-                <legend> um Google Glass</legend>
-                    Gostaria de adquirir um Google Glass quando disponível
-                    Cor:
-                    Quantidade:
-                    Preço Total: R$
+                <fieldset id="pedido">
+                <legend> Quero um Google Glass</legend>
+                <p><input type="checkbox" name="tPed" id="cPed">
+                    <label>Gostaria de adquirir um Google Glass quando disponível</label></p>
+                    <p><label for="cCor">Cor:</label>
+                    <input type="color" name="tCor" id="cCor" value="#000FF"/>
+                    </p>
+                    <p>
+                    <label for="cQtd">Quantidade:</label>
+                    <input type="number" name="tQtd" id="cQtd" min="0" max="5"/>
+                    </p>
+                    <p>
+                    <label for="cTot">Preço Total: R$</label>
+                    <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly>
+                    </p>
                 </fieldset>
-
-                [BOTÃO ENVIAR]
+                <input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
             </form>
             </article>
         </section>
         
         <footer id="rodape">
             <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
-                <a href="http://facebook.com/cursosemvideo"> Facebook</a> | <a
-                    href="http://twitter.com/cursosemvideo">Twitter</a></p>
+                <a href="http://facebook.com/cursosemvideo" target="_blank"> Facebook</a>
+                |
+                <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
         </footer>
     </div>
 
