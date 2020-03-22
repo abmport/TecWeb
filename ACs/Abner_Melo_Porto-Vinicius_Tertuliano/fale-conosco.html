@@ -24,7 +24,6 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
 
-<<<<<<< HEAD
             <img id="icone" src="_imagens/contato.png" alt="imagem de telefone">
             <nav id="menu">
                 <h1>Menu Principal</h1>
@@ -55,11 +54,18 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                 <form method="POST" action="#" oninput="calc_total()" >
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
-                        <p for="cNome">Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
-                        
-                        <p for="cSenha">Senha: <input type="password" name="tSenha" id="cSenha" size="20" maxlength="8" placeholder="Senha:"></p>
-                        
-                        <p for="cMail">E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite seu email"></p>
+                        <label for="cNome">
+                            Nome:                        
+                        </label>
+                        <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"><p></p>
+
+                        <label for="cSenha">Senha: 
+                        <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha:">
+                        </label>
+                        <hr></hr>
+
+                        <label for="cMail">E-mail: </label>
+                        <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite seu email">
                         
                         <fieldset id="sexo">
                             <legend>Sexo:</legend>
@@ -69,56 +75,16 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                         </fieldset>
                         <label for="cNasc">Data de Nascimento:</label>
                         <input type="date" name="tNasc" id="cNasc">
-=======
-        <img id="icone" src="_imagens/contato.png" alt="imagem de telefone">
-        <nav id="menu">
-            <h1>Menu Principal</h1>
-            <ul>
-                <li onmousemove="trocaLogo('_imagens/home.png')" onmouseout="trocaLogo('_imagens/contato.png')"><a href="index.html">Home</a></li>
-                <li onmousemove="trocaLogo('_imagens/especificacoes.png')" onmouseout="trocaLogo('_imagens/contato.png')"><a href="#">Especificações</a></li>
-                <li onmousemove="trocaLogo('_imagens/fotos.png')" onmouseout="trocaLogo('_imagens/contato.png')"><a href="#">Fotos</a></li>
-                <li onmousemove="trocaLogo('_imagens/multimidia.png')" onmouseout="trocaLogo('_imagens/contato.png')"><a href="#">Multimídia</a></li>
-                <li onmousemove="trocaLogo('_imagens/contato.png')" onmouseout="trocaLogo('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="corpo-full">
-        <article id="noticia-principal">
-            <header id="cabecalho-artigo">
-                <hgroup>
-                    <h3>Fale Conosco > Contato</h3>
-                    <h1>Formulário de Contato</h1>
-                    <h2>por Gustavo Guanabara</h2>
-                    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
-                </hgroup>
-            </header>
-            <form method="POST" action="#" oninput="calc_total();">
-                <fieldset id="usuario">
-                    <legend>Identificação do Usuário</legend> 
-                    <label for="cNome">Nome:</label>
-                    <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo">
-                    <br>
-                    <br>
-                    <label for="cSenha">Senha:</label>
-                    <input type="password" name="tSenha" id="cSenha" size="20" maxlength="8" placeholder="Senha:">
-                    <legend>____________________________________________</legend>
-                    <br>
-                    <label for="cMail">E-mail:</label>                    
-                    <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite seu email">
-                    <fieldset id="sexo"> <legend>Sexo:</legend>
-                        <input type="radio" name="tSexo" id="cMasc" value="cMasc" checked> <label for="cMasc">Masculino</label>
-                        <br>
-                        <input type="radio" name="tSexo" id="cFem" value="cFem"> <label for="cFem">Feminino</label>
->>>>>>> 93968e943dedbd6e2754bba11e05d399c10f3257
+
                     </fieldset>
+
                     <fieldset id="endereco">
                         <legend> Endereço do Usuário</legend>
 
                         <label for="cRua">Logradouro: <input type="text" name="tRua" id="cRua" size="15" maxlength="80" placeholder="Rua, Avenida..."></label>
                         
 
-                        <label for="cNum">Número: <input type="number" name="tNum" id="cNum" size="20" min="0" max="99999" placeholder="Número"></label>
-                        
+                        <label for="cNum">Número: <input type="number" name="tNum" id="cNum" size="20" min="0" max="99999" placeholder="Número"></label><p></p>
                         <label for="cEst">Estado:</label>
                         <select name="cEst" id="tEst">
                             <option>Acre (AC)</option>
@@ -148,6 +114,7 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                             <option>Sergipe (SE)</option>
                             <option>Tocantins (TO)</option>
                         </select>
+                        <p></p>
                         <label for="cCid">Cidade:
                             <input type="text" name="tCid" id="cCid" size="20" maxlength="30" placeholder="Sua cidade"
                                 list="cidades">
@@ -162,22 +129,20 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                     <fieldset id="mensagem">
                         <legend> Mensagem do Usuário</legend>
 
-                        <label for="cUrg">Grau de Urgência:
-                            Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max
-                        </label>
+                        <label for="cUrg">Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max</label><p></p>
+                        
                         <label for="cMsg">Mensagem:
-                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"
-                                placeholder="Deixe sua mensagem..."></textarea>
+                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"placeholder="Deixe sua mensagem..."></textarea>
                         </label>
                     </fieldset>
                     <fieldset id="pedido">
                         <legend> Quero um Google Glass</legend>
                         <input type="checkbox" name="tPed" id="cPed">
-                        <label>Gostaria de adquirir um Google Glass quando disponível</label>
+                        <label>Gostaria de adquirir um Google Glass quando disponível</label><p></p>
                         <label for="cCor">Cor:</label>
-                        <input type="color" name="tCor" id="cCor" value="#000FF" />
+                        <input type="color" name="tCor" id="cCor" value="#000FF" /><p></p>
                         <label for="cQtd">Quantidade:</label>
-                        <input type="number" name="tQtd" id="cQtd" min="0" max="5" />
+                        <input type="number" name="tQtd" id="cQtd" min="0" max="5" /><p></p>
                         <label for="cTot">Preço Total: R$</label>
                         <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly>
                     </fieldset>

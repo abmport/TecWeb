@@ -53,6 +53,7 @@ fieldset#pedido {
     background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
 }
 
-p{
-    content: initial;
-
+hr {
+    border-width: 1px 1px 1px 1px;
+    margin: 20px 20px 20px 1px;
+}
