@@ -34,7 +34,7 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 1090px;
+    left: 1247px;
     top: 70px;
 }
 
@@ -92,6 +92,7 @@ figure.foto-legenda:hover figcaption {
 }
 
 /*Formatação do menu*/
+
 nav#menu {
     display: block;
 }
@@ -101,7 +102,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 520px;
+    left: 735px;
 }
 
 nav#menu li {
@@ -114,7 +115,6 @@ nav#menu li {
     -o-transition: background-color 1s;
     -ms-transition: background-color 1s;
     transition: background-color 1s;
-
 }
 
 nav#menu li:hover {
@@ -179,11 +179,9 @@ aside#lateral {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
-aside#lateral h1 {
-    font-family: "fonteLogo", sans-serif;
-    font-size: 20pt;
-    color: #606060;
-    margin-top: 0px;
+aside#lateral img {
+    display: block;
+    width: 425px;
 }
 
 aside#lateral h2 {
@@ -191,6 +189,7 @@ aside#lateral h2 {
     font-size: 13pt;
     color: #fff;
     padding: 5px;
+    margin-bottom: 0px;
 }
 
 footer#rodape {
