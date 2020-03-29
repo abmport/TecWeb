@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 form {
     width: 500px;
     margin: auto;
@@ -30,15 +29,14 @@ fieldset {
 
 fieldset#usuario {
     background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
-    
-
 }
 
 fieldset#sexo {
     width: 150px;
 }
-fieldset#sexo label{
-    margin-right:30px;
+
+fieldset#sexo label {
+    margin-right: 30px;
 }
 
 fieldset#endereco {

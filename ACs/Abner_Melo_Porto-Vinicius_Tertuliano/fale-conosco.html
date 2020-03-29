@@ -8,11 +8,11 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/estilo.css">
-    <link rel="stylesheet" href="_css/form.css">
-    
+    <link rel="stylesheet" href="./_css/estilo.css">
+    <link rel="stylesheet" href="./_css/form.css">
+
     <title>Tudo sobre Google Glass</title>
-    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <script language="javascript" src="./_javascript/funcoes.js"></script>
 </head>
 
 <body>
@@ -51,25 +51,29 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                         <h3 class="direita">Atualizado em 01/Maio/2013</h3>
                     </hgroup>
                 </header>
-                <form method="POST" action="#" oninput="calc_total()" >
+                <form method="POST" action="#" oninput="calc_total()">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
                         <label for="cNome">
-                            Nome:                        
+                            Nome:
                         </label>
-                        <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"><p></p>
+                        <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo">
+                        <p></p>
 
-                        <label for="cSenha">Senha: 
-                        <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha:">
+                        <label for="cSenha">Senha:
+                            <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8"
+                                placeholder="Senha:">
                         </label>
-                        <hr></hr>
+                        <hr>
+                        </hr>
 
                         <label for="cMail">E-mail: </label>
-                        <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite seu email">
-                        
+                        <input type="email" name="tMail" id="cMail" size="20" maxlength="40"
+                            placeholder="Digite seu email">
+
                         <fieldset id="sexo">
                             <legend>Sexo:</legend>
-                            <input type="radio" name="tSexo" id="cMasc" value="M" > <label for="cMasc" >Masculino</label>
+                            <input type="radio" name="tSexo" id="cMasc" value="M"> <label for="cMasc">Masculino</label>
 
                             <input type="radio" name="tSexo" id="cFem" value="F"> <label for="cFem">Feminino</label>
                         </fieldset>
@@ -81,10 +85,14 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                     <fieldset id="endereco">
                         <legend> Endereço do Usuário</legend>
 
-                        <label for="cRua">Logradouro: <input type="text" name="tRua" id="cRua" size="15" maxlength="80" placeholder="Rua, Avenida..."></label> <p></p>
-                        
+                        <label for="cRua">Logradouro: <input type="text" name="tRua" id="cRua" size="15" maxlength="80"
+                                placeholder="Rua, Avenida..."></label>
+                        <p></p>
 
-                        <label for="cNum">Número: <input type="number" name="tNum" id="cNum" size="20" min="0" max="99999" placeholder="Número"></label><p></p>
+
+                        <label for="cNum">Número: <input type="number" name="tNum" id="cNum" size="20" min="0"
+                                max="99999" placeholder="Número"></label>
+                        <p></p>
                         <label for="cEst">Estado:</label>
                         <select name="cEst" id="tEst">
                             <option>Acre (AC)</option>
@@ -129,20 +137,26 @@ vinicius.tertuliano@aluno.faculdadeimpacta.com.br
                     <fieldset id="mensagem">
                         <legend> Mensagem do Usuário</legend>
 
-                        <label for="cUrg">Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max</label><p></p>
-                        
+                        <label for="cUrg">Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0"
+                                max="10" step="2">Max</label>
+                        <p></p>
+
                         <label for="cMsg">Mensagem:
-                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"placeholder="Deixe sua mensagem..."></textarea>
+                            <textarea name="tMsg" id="cMsg" cols="35" rows="5"
+                                placeholder="Deixe sua mensagem..."></textarea>
                         </label>
                     </fieldset>
                     <fieldset id="pedido">
                         <legend> Quero um Google Glass</legend>
                         <input type="checkbox" name="tPed" id="cPed">
-                        <label>Gostaria de adquirir um Google Glass quando disponível</label><p></p>
+                        <label>Gostaria de adquirir um Google Glass quando disponível</label>
+                        <p></p>
                         <label for="cCor">Cor:</label>
-                        <input type="color" name="tCor" id="cCor" value="#000FF" /><p></p>
+                        <input type="color" name="tCor" id="cCor" value="#000FF" />
+                        <p></p>
                         <label for="cQtd">Quantidade:</label>
-                        <input type="number" name="tQtd" id="cQtd" min="0" max="5" /><p></p>
+                        <input type="number" name="tQtd" id="cQtd" min="0" max="5" />
+                        <p></p>
                         <label for="cTot">Preço Total: R$</label>
                         <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly>
                     </fieldset>
